@@ -1,0 +1,40 @@
+@import 'lib/base/reset';
+@import 'lib/base/pic';
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font: 400 12px/1 '\5FAE\8F6F\96C5\9ED1';
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.ct {
+  font-size: 0;
+  line-height: 0;
+}
+
+.cf:before,
+.cf:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
